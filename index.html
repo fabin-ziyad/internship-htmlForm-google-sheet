@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form assignment</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="pageloader">
+    <img src="assets/gif/__Iphone-spinner-1.gif" alt="processing..." />
+ </div>
+    <header>
+        <h2 class="header-title">HTML FORM TO GOOGLE SHEETS ASSIGNMET <span><input type="checkbox" class="bt-checkbox" id="bt-checkbox" title="Bootstrap form" onchange="triggerfunc()"></span></h2>
+    </header>
+    
+    <div class="main" id="normal-form">
+      <form id="submit-form" action="">
+        <div class="form">
+            <div class="title">Welcome</div>
+               <div class="subtitle">Made with html and css only</div>
+                  <div class="inline-field">
+                   <input id="firstname" class="input" type="text" name="first_Name" placeholder="First Name"  minlength="2" required/>
+                   <input id="lastname" class="input" type="text" name="Last_Name" placeholder="Last Name"  minlength="2" required/>
+                  </div>
+                   <input id="email" class="input" type="text" name="Email" placeholder="Email"  minlength="6" required/>
+                      <button type="submit" class="submit">submit</button>
+                 </div>
+            </div>
+        </div>
+      </form>
+    </div>
+    <div class="main" id="bt-form" style="display: none;">
+      <form id="submit-bt-form" action="">
+        <div class="bt-form mt-5">
+          <div class="title">Welcome</div>
+            <div class="subtitle">Made with html,css and Bootstrap</div>
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <div class="input-container">
+                    <label for="firstname">First name</label>
+                    <input id="firstname" class="input" type="text" name="first_Name" placeholder=" "  minlength="2" required/ >
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-container">
+                    <label for="lastname">Last name</label>
+                    <input id="lastname" class="input" type="text" name="Last_Name" placeholder=" "  minlength="2" required/>
+                  </div>
+                </div>
+              </div>
+              <div class="input-container">
+                <label for="email">Email</label>
+                <input id="email" class="input" type="text" name="Email"  placeholder=" "  minlength="6" required/>
+              </div>
+              <button type="submit" class="bootstrap-submit mt-5">submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <h6 class="text-center">Designed and developed by <span><b> fabin ziyad</b></span></h6>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
